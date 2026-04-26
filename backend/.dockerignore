@@ -1,0 +1,11 @@
+vendor
+node_modules
+.git
+.env
+.dockerignore
+Dockerfile
+storage/*.key
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*.php
+backend/storage/logs/*.log

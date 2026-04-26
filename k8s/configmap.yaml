@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tokoxpress-config
+  namespace: tokoxpress
+data:
+  APP_NAME: "TokoXpress"
+  APP_ENV: production
+  APP_DEBUG: "false"
+  APP_URL: "https://www.tokoxpress.com"
+  DB_CONNECTION: mysql
+  DB_HOST: mysql-service
+  DB_PORT: "3306"
+  DB_DATABASE: tokoxpress
+  SESSION_DRIVER: database
+  SESSION_LIFETIME: "120"
+  CACHE_STORE: database
+  QUEUE_CONNECTION: database
+  FILESYSTEM_DISK: local
+  LOG_CHANNEL: stack
+  LOG_LEVEL: error
